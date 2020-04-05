@@ -19,8 +19,13 @@ body{
 	width:20rem;
 	border:0.1rem solid #8395a7;
 	border-radius: 0.5rem;
-	margin:2rem;
+	margin:2rem auto;
 	height:auto;
+	box-shadow:7px 7px 10px #d5d5d5;
+	transition: all 0.2s linear;
+}
+.github-profile-card:hover {
+	box-shadow:7px 7px 10px #b5b5b5;
 }
 
 .github-profile-card-top {
@@ -33,11 +38,11 @@ body{
 }
 
 .github-avatar {
-	height:130%;
+	width:50%;
 	border-radius: 50%;
 	position:absolute;
 	top:30%;
-	left:20%;
+	left:25%;
 	display:block;
 	border: 0.1rem solid #555;
 	transition: transform 0.2s linear;
@@ -67,7 +72,7 @@ body{
 
 .github-stats {
 	display:grid;
-	margin-top:1rem;
+	margin:1rem 0;
 	grid-template-columns: repeat(3,1fr);
 }
 
@@ -98,9 +103,9 @@ a{
 	margin:1rem;
 	text-align:center;
 	font-weight: 400;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.5px;
 	word-spacing: 1px;
-	line-height: 120%;
+	line-height: 140%;
 }
 
 .github-btn {

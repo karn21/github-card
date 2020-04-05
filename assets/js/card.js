@@ -3,10 +3,17 @@
   // const user = "karn21"
   var url = `https://api.github.com/users/${user}`
   fetch(url)
-  .then((resp) => resp.json()) 
+  .then((resp) => {
+    if (resp.status == 404) {
+      console.log("not found")
+      // 
+    }
+    return resp.json()
+  }) 
   .then(function(data) {
   	
   	document.getElementById("github-name").innerHTML = data.name
+    document.getElementById("github-user-name").innerHTML = `(@${data.login})`
   	document.getElementById("github-name").href = data.html_url
     document.getElementById("github-avatar").src = data.avatar_url
   	document.getElementById("github-bio").innerHTML = data.bio
@@ -24,4 +31,7 @@
   	repos.parentElement.href = repos_url
     console.log(data)
     })
+  .catch((error) => {
+    console.log(error)
+  })
 
