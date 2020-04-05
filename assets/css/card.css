@@ -29,7 +29,7 @@ body{
 }
 
 .github-profile-card-top {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://img.wallpapersafari.com/desktop/1600/900/75/53/q1p8cO.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/bg-card.jpg');
 	background-size: cover;
 	background-position: center;
 	height:8rem;
@@ -117,13 +117,43 @@ a{
 	border:none;
 	border-radius:1.5rem;
 	display:inline;
-	transition: all 0.2s linear
+	transition: all 0.2s linear;
+	cursor:pointer;
 }
 
 .github-btn:hover {
 	background-color:#d35400;
 }
 
+.github-btn:focus {
+	outline: none;
+}
+
+.user-input-section {
+	align-items: center;
+	text-align: center;
+	margin:2rem auto;
+}
+
+.github-user-input{
+	margin:1rem;
+	padding:0.5rem;
+	font-size: 120%;
+	border:none;
+	border-bottom: 1px solid #e5e5e5;
+	text-align:center;
+	transition: border-bottom 0.5s linear;
+	color:#222f3e;
+}
+::placeholder {
+  color: #b5b5b5;
+  opacity: 1;
+}
+
+.github-user-input:focus{
+	outline:none;
+	border-bottom: 1.5px solid #007bff
+}
 
 @media only screen and (max-width:768px) {
 	.github-profile-card{
