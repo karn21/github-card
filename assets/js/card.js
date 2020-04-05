@@ -16,8 +16,8 @@
     fetch(url)
     .then((resp) => {
       if (resp.status == 404) {
-        console.log("not found")
-        // 
+        alert('user not found')
+        return;
       }
       return resp.json()
     }) 
