@@ -8,6 +8,7 @@
   	
   	document.getElementById("github-name").innerHTML = data.name
   	document.getElementById("github-name").href = data.html_url
+    document.getElementById("github-avatar").src = data.avatar_url
   	document.getElementById("github-bio").innerHTML = data.bio
   	var following = document.getElementById("github-following")
   	following.innerHTML = data.following

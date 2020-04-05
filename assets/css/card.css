@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 
 *{
@@ -11,6 +11,9 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
 }
+
+
+
 
 .github-profile-card {
 	width:20rem;
@@ -34,7 +37,7 @@ body{
 	border-radius: 50%;
 	position:absolute;
 	top:30%;
-	left:25%;
+	left:20%;
 	display:block;
 	border: 0.1rem solid #555;
 	transition: transform 0.2s linear;
@@ -94,7 +97,10 @@ a{
 .github-bio {
 	margin:1rem;
 	text-align:center;
-	font-weight: 500;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	word-spacing: 1px;
+	line-height: 120%;
 }
 
 .github-btn {
@@ -111,4 +117,12 @@ a{
 
 .github-btn:hover {
 	background-color:#d35400;
+}
+
+
+@media only screen and (max-width:768px) {
+	.github-profile-card{
+		width:80vw;
+		margin:2rem auto;
+	}
 }
